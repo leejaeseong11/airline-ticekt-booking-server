@@ -53,29 +53,6 @@ for (let i = 1; i <= 300; i++) {
   });
 }
 
-data.airline.push({
-  KOREANAIR: "대한항공",
-  ASIANA: "아시아나항공",
-  TEEWAY: "티웨이항공",
-  JINAIR: "진에어",
-  AIRSEOUL: "에어서울",
-  JEJUAIR: "제주항공",
-  EASTAR: "이스타항공",
-});
-
-data.destination.push({
-  ICN: "인천",
-  CJU: "제주",
-  HKG: "홍콩",
-  HAN: "하노이",
-  KIX: "오사카",
-  NRT: "도쿄",
-  SHA: "상하이",
-  CDG: "파리",
-  LHR: "런던",
-  SPN: "사이판",
-});
-
 var dictstring = JSON.stringify(data);
 
 var fs = require("fs");
