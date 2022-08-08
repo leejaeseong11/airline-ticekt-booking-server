@@ -36,7 +36,7 @@ for (let i = 1; i <= 300; i++) {
   let randomDepartures =
     destination[Math.floor(Math.random() * destination.length)];
   let randomArrivals = randomDepartures;
-  while (randomArrivals != randomDepartures) {
+  while (randomArrivals === randomDepartures) {
     randomArrivals =
       destination[Math.floor(Math.random() * destination.length)];
   }
