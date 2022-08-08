@@ -2,7 +2,7 @@ const jsonServer = require("json-server");
 const server = jsonServer.create();
 const path = require("path");
 const router = jsonServer.router(path.join(__dirname, "db.json"));
-const middlewares = jsonServer.defaults();
+const middlewares = jsonServer.defaults({ readOnly: true });
 
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares);
@@ -13,7 +13,7 @@ server.use(jsonServer.bodyParser);
 
 server.use(router);
 
-let port = process.env.PORT || 3001;
+let port = process.env.PORT;
 server.listen(port, () => {
   console.log(`JSON Server is running, port(${port})`);
 });
