@@ -13,7 +13,7 @@ server.use(jsonServer.bodyParser);
 
 server.use(router);
 
-let port = 80;
+let port = process.env.PORT || 3001;
 server.listen(port, () => {
   console.log(`JSON Server is running, port(${port})`);
 });
