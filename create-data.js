@@ -1,7 +1,5 @@
 let data = {
-  tickets: [],
-  airline: [],
-  destination: [],
+  tickets: []
 };
 
 let airline = [
