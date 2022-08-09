@@ -33,7 +33,7 @@ function getRandomDate(start, end) {
   return new Date(startDate + Math.random() * (endDate - startDate));
 }
 
-for (let i = 1; i <= 300; i++) {
+for (let i = 1; i <= 500; i++) {
   let randomAirline = Math.floor(Math.random() * airline.length);
   let randomDepartures =
     destination[Math.floor(Math.random() * destination.length)];
