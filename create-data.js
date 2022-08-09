@@ -31,7 +31,7 @@ function getRandomDate(start, end) {
   return new Date(startDate + Math.random() * (endDate - startDate));
 }
 
-for (let i = 1; i <= 500; i++) {
+for (let i = 1; i <= 1000; i++) {
   let randomAirline = Math.floor(Math.random() * airline.length);
   let randomDepartures =
     destination[Math.floor(Math.random() * destination.length)];
@@ -46,7 +46,7 @@ for (let i = 1; i <= 500; i++) {
     airline: airline[randomAirline],
     departures: randomDepartures,
     arrivals: randomArrivals,
-    date: getRandomDate(new Date(2022, 9, 1), new Date(2022, 12, 31)),
+    date: getRandomDate(new Date(2022, 8, 2), new Date(2022, 12, 1)),
     price: Math.floor(Math.random() * 1000000),
   });
 }
